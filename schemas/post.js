@@ -4,6 +4,14 @@ export default {
   type: "document",
   fields: [
     {
+      name: "isPreview", // The field name (must match your code)
+      title: "Is Preview", // The label shown in Sanity Studio
+      type: "boolean",
+      description:
+        "Check this box if the post should only be visible on the preview site.",
+      initialValue: true, // Default value for new posts
+    },
+    {
       name: "title",
       title: "Title",
       type: "string",
